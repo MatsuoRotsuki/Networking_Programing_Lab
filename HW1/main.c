@@ -179,7 +179,7 @@ void signIn()
             else
             {
                 // Account is blocked
-                printf("Account is blocked\n");
+                printf("Account is not ready\n");
                 return;
             }
         }
@@ -193,7 +193,7 @@ void signIn()
             {
                 // Exceeded 3 times wrong password
                 foundAccount->status = 0;
-                printf("Password is incorrect. Account is blocked\n");
+                printf("Account is blocked\n");
             }
             updateFile();
         }
